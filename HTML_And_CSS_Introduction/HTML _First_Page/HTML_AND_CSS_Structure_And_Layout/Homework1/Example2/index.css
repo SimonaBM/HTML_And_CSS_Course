@@ -1,0 +1,24 @@
+header {
+    background-color: #f2a062;
+    padding: 15px;
+}
+aside {
+    background-color: #f6bd62;
+    float: left;
+    Width: 20.7%;
+    height: 400px;
+    padding: 15px;
+}
+main {
+    background-color: #8eabc0;
+    float:left;
+    Width: 75%;
+    height: 400px;
+    padding: 15px;
+}
+footer {
+    background-color: #b7ce3f;
+    clear: both;
+   padding: 15px;
+}
+
