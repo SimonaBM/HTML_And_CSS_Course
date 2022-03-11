@@ -1,0 +1,38 @@
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav a {
+  color: black;
+  font-weight: bold;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+.breadcrumb ol {
+  display: flex;
+  list-style-type: none;
+}
+.breadcrumb ol li::after {
+  content: "/";
+}
+.breadcrumb ol li:last-child::after {
+  content: "";
+}
+.pageHeader {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.pageHeader p {
+  line-height: 2;
+  font-size: 18px;
+}
