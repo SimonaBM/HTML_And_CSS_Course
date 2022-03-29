@@ -1,3 +1,16 @@
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 body {
   background-color: #ccc;
 }
@@ -28,16 +41,89 @@ nav li a {
 }
 main {
   clear: left;
+  background-color: #fff;
+  padding: 2%;
+  font-size: 1.25em;
 }
+.action {
+  font-size: 1.35em;
+  color: #666600;
+  font-weight: bold;
+}
+#waights,
+#cardio,
+#training {
+  width: 29%;
+  float: left;
+  margin: 0 2%;
+}
+
+#exercises {
+  clear: left;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  background-color: #f2f2f2;
+  padding: 1% 2%;
+}
+
+#exercises dt {
+  font-weight: bold;
+}
+
+#exercises dd {
+  padding: 0.5% 1% 2% 0;
+}
+
+#contact {
+  text-align: center;
+}
+#contact a {
+  color: #66660;
+  text-decortion: none;
+}
+
 h1 {
   text-align: center;
 }
+
 #container {
   width: 80%;
   margin: 0 auto;
   background-color: white;
 }
+
 img {
   max-width: 100%;
   display: block;
+}
+
+#hero {
+  clear: both;
+  position: relative;
+}
+#hero h2 {
+  color: #fff;
+  position: absolute;
+  margin-left: 30px;
+}
+.arrow-bullets {
+  list-style-image: url("/images/arrow.png");
+}
+footer p {
+  font-size: 0.75em;
+  text-align: center;
+  color: #fff;
+  padding: 0 1em;
+}
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+.external-link {
+  color: #666600;
+  font-weight: bold;
+  text-decoration: none;
+}
+.map {
+  border: 8pix solid #000;
 }

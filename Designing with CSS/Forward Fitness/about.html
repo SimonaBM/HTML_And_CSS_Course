@@ -8,6 +8,7 @@ student's Last Name -->
 <head>
     <title>Forward Fitness Club</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@ student's Last Name -->
         <header>
             <h1>Forward Fitness Club</h1>
             <a href="index.html">
-                <img src="./images/forward-fitness-logo.png" alt="Forward-fitness-logo" height="220" width="297">
+                <img src="./images/forward-fitness-logo.png" alt="Forward-fitness-logo">
             </a>
         </header>
         <!--Use the nav area to add hyperlinks to other pages within the website-->
@@ -39,13 +40,13 @@ student's Last Name -->
                 <h1>Weights</h1>
                 <img src="./images/people-with-weights.jpg" alt="Two people working out with weight in each hand"
                     height="300" width="450">
-                <P>
+                <p>
                     Our facility includes a weight training area with several weight
                     options. Build lean muscle with weights and improve your core with
                     weight training.
 
-                </P>
-                <ul>
+                </p>
+                <ul class="arrow-bullets">
                     <li>Dumbbells</li>
                     <li>Kettle bells</li>
                     <li>Barbells</li>
@@ -55,7 +56,7 @@ student's Last Name -->
 
             <div id="cardio">
                 <h1>Cardio</h1>
-                <img src="./images/people-workingout-machines.jpg" alt="Cardio equipment" height="300" width="450" />
+                <img src="./images/people-workingout-machines.jpg" alt="Cardio equipment" />
                 <p>
                     Burn fat through cardio workouts.Experts recommend 150 minutes of
                     cardio each week. We have several equipment choices for your workout
@@ -83,9 +84,39 @@ student's Last Name -->
                 </ul>
             </div>
 
-            <h2>Ready to get started? Contact us today</h2>
-            <h4>Call us: (814) 555-9608</h4>
-            <h4>Email us : <a href="mailto:forwardfitness@club.net"></a></h4>
+            <div id="exercises">
+                <p>
+                    The following are common exercises that we encourage our clients to
+                    do as part of their daily exercise routine.
+                </p>
+                <dl>
+                    <dt>Burpes</dt>
+                    <dd>
+                        Burpes are great, full body exercise to increase your strength and
+                        endurance. Begin in a standing position, drop into a squat and
+                        extend your hands froward, kick your foot back and then forward
+                        again quickly, and then jump up from a squatted position.
+                    </dd>
+                    <dt>Plank</dt>
+                    <dd>
+                        Planks build your core strength. To perform a plank, get in a push
+                        up position and rest your forearms on the floor. Hold the position
+                        as long as you can.
+                    </dd>
+                    <dt>Mountain Climber</dt>
+                    <dd>
+                        Mountain climbers are a good cardio exercise. Place your hands on
+                        the floor in a push up position, then bring one knee up to your
+                        chest and then switch as quickly as you can (as though you are
+                        climbing a mountain).
+                    </dd>
+                </dl>
+                <p>
+                    For more information about how to stay active, visit
+                    <a href="https://www.hhs.gov/fitness/bc-active/index.html" target="_blank"
+                        class="external-link">fitness.gov</a>
+                </p>
+            </div>
         </main>
         <!-- Use the footer area to add webpage footer content -->
         <footer>
