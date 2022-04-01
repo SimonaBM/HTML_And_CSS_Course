@@ -1,9 +1,7 @@
-/* 
-Author: Simona Bojoska Miloshevska
+/* Author: Simona Bojoska Miloshevska
 Date: 31.03.2022
 File Name: styless.css 
 */
-
 /* CSS Reset */
 
 body,
@@ -54,23 +52,53 @@ nav ul {
 }
 nav ul li {
   font-size: 1.5em;
-  font-family: Verdana, Tahoma, sans-serif;
+  font-family: 'Francois One', sans-serif;
   border-top: 1px solid #fff;
+}
+nav li:first-child {
+  border-top: none;
 }
 nav li a {
   display: block;
   color: #fff;
-  text-align: center;
   padding: 0.5em 1em;
   text-decoration: none;
 }
-/* Style rule for main */
-main {
-  clear: left;
-  background-color: #fff;
-  padding: 2%;
-  font-size: 1.25em;
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+  display: block;
 }
+
+.tablet-desktop {
+  display: none;
+}
+/* Style rule for main */
+
+main {
+ background-color: #fff;
+  padding: 2%;
+  font-size: 1.15em;
+  font-family: 'Roboto Slab', serif;
+}
+.tel-link {
+background-color: #404040;
+padding: 2%;
+margin: 0 auto;
+width: 80%;
+text-align: center;
+border-radius: 5px;
+}
+.tel-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+}
+
+.hours {
+  margin-left: 10%;
+}
+
 .action {
   font-size: 1.35em;
   color: #666600;
@@ -79,12 +107,13 @@ main {
 #waights,
 #cardio,
 #training {
-  width: 29%;
-  float: left;
-  margin: 0 2%;
+ margin: 0 2%;
+}
+.round {
+  border-radius: 8px;
 }
 
-#exercises {
+/* #exercises {
   clear: left;
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
@@ -98,12 +127,12 @@ main {
 
 #exercises dd {
   padding: 0.5% 1% 2% 0;
-}
+} */
 
 #contact {
   text-align: center;
 }
-#contact a {
+#contact .contact-email-link {
   color: #666600;
   text-decoration: none;
 }
@@ -152,5 +181,7 @@ footer p a {
   text-decoration: none;
 }
 .map {
-  border: 8pix solid #000;
+  border: 2px solid #000;
+  width: 95%;
+  height: 50%;
 }
