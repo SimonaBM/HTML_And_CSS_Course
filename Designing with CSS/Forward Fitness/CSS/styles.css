@@ -64,6 +64,11 @@ nav li a {
   padding: 0.5em 1em;
   text-decoration: none;
 }
+nav li a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
 /* Show mobile class, hide tablet-desktop class */
 .mobile {
   display: block;
@@ -113,21 +118,122 @@ border-radius: 5px;
   border-radius: 8px;
 }
 
-/* #exercises {
+.map {
+  border: 2px solid #000;
+  width: 95%;
+  height: 50%;
+}
+
+/*Media Query for Tablet Viewport */
+
+@media screen and (min-width: 630px) 
+{
+  /*Tablet Viewport: Show tablet-desktop class, hide mobile class */
+
+.tablet-desktop {
+display: block;
+} 
+  .mobile {
+    display: none;
+  }
+
+  /* Tablet Viewport: Style rule for header */
+  header {
+    position: static;
+    padding-bottom: 2%;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+  nav li {
+    border-top: none;
+    display: inline-block;
+    border-right: 1px solid #ffff;
+  }
+
+  nav li:last-child {
+    border-right: none;
+  }
+
+  nav li a {
+    padding: 0.1em 0.75em;
+  }
+
+  /* Tablet Viewport: Style rules for main content area */
+  main ul {
+    margin: 0 0 4% 10%;
+  }
+
+ #exercises {
   clear: left;
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
   background-color: #f2f2f2;
   padding: 1% 2%;
 }
-
 #exercises dt {
   font-weight: bold;
 }
 
 #exercises dd {
   padding: 0.5% 1% 2% 0;
-} */
+}
+
+.tel-num {
+  font-size: 1.25em;
+}
+.map {
+  width: 600px;
+  height:450px;
+}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width:780px) {
+  header {
+    widht: 25%
+    float: left;
+    padding-bottom: 0;
+   }
+   nav {
+     float: right;
+     width: 70%;
+     margin: 4em 1em 0 0;
+   }
+   nav ul {
+     text-align: right;
+   }
+   nav il li {
+     border: none;
+   }
+   nav ul li a {
+     padding: 0.5em 1em;
+   }
+   /* Desktop View: Style Rules for main content*/
+   main {
+     clear: both;
+   }
+   main h1 {
+     font-size: 1.8em;
+   }
+   #weights, #cardio #training {
+     width: 29%;
+     float: left;
+     margin: 0 2%;
+   }
+   #exercises {
+     clear: both;
+   }
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and ( min-width: 1921px) {
+#container {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+}
+
 
 #contact {
   text-align: center;
@@ -180,8 +286,5 @@ footer p a {
   font-weight: bold;
   text-decoration: none;
 }
-.map {
-  border: 2px solid #000;
-  width: 95%;
-  height: 50%;
-}
+
+
